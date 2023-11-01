@@ -1,0 +1,32 @@
+{
+  "include": ["src/**/*", "tests/**/*"],
+  "exclude": ["node_modules/", "cloned-repos/"],
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDir": ".",
+    "baseUrl" : ".",
+    "target": "es2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "paths": {
+        "@Src/*": ["src/*", "build/src/*"],
+        "@Config/*": ["src/config/*", "build/config/*"],
+        "@Controller/*": ["src/controller/*", "build/controller/*"],
+        "@Handler/*": ["src/handler/*", "build/handler/*"],
+        "@Helper/*": ["src/helper/*", "build/helper/*"],
+        "@Models/*": ["src/models/*", "build/models/*"]
+    }
+  }
+}
